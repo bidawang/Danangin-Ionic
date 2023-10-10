@@ -1,0 +1,131 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Danangin-Ionic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">My Personal Info
+      </ion-title>
+    </ion-toolbar><br><br>
+    <div class="profile-picture">
+      <img src="../../assets/profil.jpg" alt="Foto Profil">
+    </div><br><br>
+    
+    
+  </ion-header>
+  <!-- tab1.page.html -->
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="showPersonalInfo1 = true; showPersonalInfo2 = false; showPersonalInfo3 = false; showPersonalInfo4 = false;" class="nav-button">Data Diri</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="showPersonalInfo1 = false; showPersonalInfo2 = true; showPersonalInfo3 = false; showPersonalInfo4 = false;" class="nav-button">Pendidikan</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="showPersonalInfo1 = false; showPersonalInfo2 = false; showPersonalInfo3 = true; showPersonalInfo4 = false;" class="nav-button">Hobi</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="showPersonalInfo1 = false; showPersonalInfo2 = false; showPersonalInfo3 = false; showPersonalInfo4 = true;" class="nav-button">Lainnya</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-card *ngIf="showPersonalInfo1">
+    <ion-card-header>
+      Data Diri
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+          <li><strong>Nama:</strong> Danang Dwi Jatmiko</li>
+          <li><strong>Usia:</strong> 21</li>
+          <li><strong>Pekerjaan:</strong> Mahasiswa</li>
+          <li><strong>Jenis Kelamin:</strong> Laki-Laki</li>
+          <li><strong>Email:</strong> mistarlong@gmail.com</li>
+          <li><strong>No HP:</strong> +62 856-6894-7486</li>
+          <li><strong>Tempat Lahir:</strong> Desa Jelapat</li>
+          <li><strong>Tanggal Lahir:</strong> 24 Desember 2002</li>
+          <li><strong>Tempat Tinggal:</strong> Desa Karang</li>
+          <li><strong>Status:</strong> Belum Menikah</li>
+          <li><strong>Anak Ke:</strong> 2 Dari 2 bersaudara</li>
+          <li><strong>Nama Ayah:</strong> Sukoco</li>
+          <li><strong>Nama Ibu:</strong> Mariam</li>
+          <li><strong>Nama Kakak:</strong> Puspa Jatmika</li>
+      </ul>
+  </ion-card-content>
+  
+  </ion-card>
+  
+  <ion-card *ngIf="showPersonalInfo2">
+    <ion-card-header>
+      Pendidikan
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+          <li>TK TUNAS MEKAR (2009)</li>
+          <li>SDN JELAPAT I (Kelas 1 Semester 1)</li>
+          <li>SDN GAMBUT I (Kelas 1 Semester 2)</li>
+          <li>SDN ANGSAU 5 (Kelas 2 - 6)</li>
+          <li>SMPN 1 PELAIHARI (2015 - 2018)</li>
+          <li>SMKN 2 PELAIHARI (2018 - 2020)</li>
+          <li>BLK Banjarbaru (2021)</li>
+          <li>POLITEKNIK Negeri Tanah Laut (2022 - Sekarang)</li>
+      </ul>
+  </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="showPersonalInfo3">
+    <ion-card-header>
+      Hobi
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+          <li>Main Game
+              <ul>
+                  <li>Mobile Legend</li>
+                  <li>Clash Of Clans</li>
+                  <li>Playstation</li>
+                  <li>Permainan Tradisional</li>
+              </ul>
+          </li>
+          <li>Nonton Film
+              <ul>
+                  <li>Anime</li>
+                  <li>Live Action</li>
+                  <li>Komedi</li>
+                  <li>Action</li>
+                  <li>Kartun</li>
+              </ul>
+          </li>
+          <li>Belajar</li>
+      </ul>
+  </ion-card-content>
+  </ion-card>
+
+<ion-card *ngIf="showPersonalInfo4">
+  <ion-card-header>
+    <b>Lainnya</b>
+  </ion-card-header>
+  <ion-card-content>
+    <ul>
+        <li>Makanan Kesukaan: Ayam Masak Kecap Yang Sedikit Gosong</li>
+        <li>Minuman Kesukaan: Cola Dingin</li>
+        <li>Makanan Yang Tidak di Suka: Alpukat</li>
+        <li>Pelajaran Kesukaan: Sesuatu yang berhubungan dengan IT atau Matematika</li>
+        <li>Panutan: Jendral Soedirman</li>
+        <li>Tempat Yang Disukai: Desa Kelahiran</li>
+        <li>Organisasi:
+            <ul>
+                <li>FSI Al Ikhwana</li>
+                <li>Badan Eksekutif Mahasiswa</li>
+                <li>Resimen Mahasiswa</li>
+                <li>KoPi TALA</li>
+            </ul>
+        </li>
+    </ul>
+</ion-card-content>
+</ion-card>

@@ -1,0 +1,31 @@
+/* home.page.scss */
+
+
+.profile-picture {
+  width: 150px; /* Lebar foto profil */
+  height: 150px; /* Tinggi foto profil */
+  border-radius: 50%; /* Menghasilkan sudut bulat */
+  overflow: hidden; /* Memotong gambar yang berlebihan */
+  margin-left: 50px; /* Add some left margin for adjustment */
+}
+.nav-button {
+  border-radius: 0%; /* Membuat tombol menjadi bulat */
+  width: 100px; /* Lebar tombol (sesuaikan sesuai kebutuhan) */
+  height: 50px; /* Tinggi tombol (sesuaikan sesuai kebutuhan) */
+  display:contents ;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000; /* Warna latar belakang */
+  color: #000000; /* Warna teks */
+  text-align: center;
+  padding: 0; /* Menghapus padding bawaan tombol */
+  border: none; /* Menghapus border bawaan tombol */
+}
+
+  
+  
+  
+  .nav-button:hover:not(.active) {
+    background-color: #191818;
+  }
+  
